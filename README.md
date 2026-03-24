@@ -1,25 +1,20 @@
 # Bit-Nexus Protocol v1.0
-**Developer:** Tinkeshwari Loganathan  
+**Developer:** L Tinkeshwari  
 **Institution:** Kristu Jayanti University (KJU)  
-**Course:** BCA Semester 2
+**Project:** Web Development Portfolio (Semester 2)
 
-## 🚀 Project Overview
-The **Bit-Nexus Protocol** is a high-performance personal portfolio designed with a "Terminal-Cyberpunk" aesthetic. It serves as a digital identity hub, showcasing technical skills and cultural integration within the KJU ecosystem.
+## 🚀 Technical Stack
+* **HTML5:** Semantic structure for high-performance indexing.
+* **CSS3:** Custom properties (Variables), **CSS Grid** for the 5-item cultural gallery, and **Glassmorphism** navigation.
+* **JavaScript:** Implementation of **Typewriter Effect** and **Intersection Observer API** for scroll-triggered animations.
+* **Version Control:** Managed via **Git Bash** and deployed on **GitHub Pages**.
 
-## 🛠️ Tech Stack
-* **HTML5:** Semantic structure for SEO and accessibility.
-* **CSS3:** Custom properties (Variables), **CSS Grid** for the 5-image cultural gallery, and **Glassmorphism** navigation.
-* **JavaScript:** Implementation of a **Typewriter Effect** and **Intersection Observer API** for scroll-triggered animations.
-* **Deployment:** Version controlled via **Git** and hosted on **GitHub Pages**.
-
-## 🏛️ Cultural Documentation
-This project features a deep-dive into the cultural life at KJU, including detailed reflections on:
-* **Shubharambha 2025:** The sacred inaugural ceremony.
-* **Ethnic Day:** A celebration of diverse Indian heritage.
+## 🏛️ Featured Cultural Documentation
+This project documents key experiences at KJU, featuring:
+* **Shubharambha 2025:** The inaugural ceremony.
+* **Ethnic Day:** Celebrating cultural diversity.
 * **NCC:** Insights into discipline and leadership.
-* **Christmas & Dance:** The rhythmic and festive pulse of the campus.
+* **Christmas & Dance:** The festive pulse of the campus.
 
-## ⚙️ How to Initialize
-1. Clone the repository.
-2. Open `index.html` in any modern web browser.
-3. Scroll to trigger the "Protocol Animations."
+## ⚙️ Initialization
+To view the "Bit-Nexus" animations, simply scroll through the gallery to trigger the JavaScript observers.
