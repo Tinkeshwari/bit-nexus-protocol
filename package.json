@@ -1,0 +1,26 @@
+{
+  "name": "bit-nexus-protocol",
+  "version": "1.0.0",
+  "description": "**Developer:** L Tinkeshwari   **Institution:** Kristu Jayanti University (KJU)   **Project:** Web Development Portfolio (Semester 2)",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tinkeshwari/bit-nexus-protocol.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Tinkeshwari/bit-nexus-protocol/issues"
+  },
+  "homepage": "https://github.com/Tinkeshwari/bit-nexus-protocol#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "nodemailer": "^8.0.4"
+  }
+}

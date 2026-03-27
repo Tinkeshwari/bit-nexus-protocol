@@ -1,8 +1,11 @@
 /* Core Theme Colors */
 :root {
-    --neon: #00f2ff; /* Cyan Neon */
-    --pink: #ff007f; /* Magenta Glow */
-    --bg: #050505;   /* Deep Tech Black */
+    --neon: #00f2ff;
+    /* Cyan Neon */
+    --pink: #ff007f;
+    /* Magenta Glow */
+    --bg: #050505;
+    /* Deep Tech Black */
     --glass: rgba(255, 255, 255, 0.03);
 }
 
@@ -161,7 +164,7 @@ body {
 }
 
 .star-group span:hover,
-.star-group span:hover ~ span {
+.star-group span:hover~span {
     color: var(--neon);
     text-shadow: 0 0 15px var(--neon);
 }
@@ -209,8 +212,12 @@ footer {
         flex-direction: column;
         text-align: center;
     }
+
     .gallery-grid {
         grid-template-columns: 1fr;
     }
-    .handwriting { font-size: 3rem; }
+
+    .handwriting {
+        font-size: 3rem;
+    }
 }

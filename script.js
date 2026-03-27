@@ -1,19 +1,33 @@
-// 1. Typewriter Effect for the Hero Header
+console.log("JS Loaded ✅");
+alert("JS IS WORKING");
+
+// ===============================
+// EMAILJS INIT (PUT YOUR KEY)
+// ===============================
+(function () {
+    emailjs.init("s3TItCcc2pQ66Em6f");
+})();
+
+// ===============================
+// TYPEWRITER EFFECT
+// ===============================
 const text = "INITIALIZING BIT-NEXUS PROTOCOL...";
-const speed = 100;
 let i = 0;
 
 function typeWriter() {
     if (i < text.length) {
         document.getElementById("typewriter").innerHTML += text.charAt(i);
         i++;
-        setTimeout(typeWriter, speed);
+        setTimeout(typeWriter, 80);
     }
 }
 
-// 2. Star Rating Engine Logic
+// ===============================
+// STAR RATING
+// ===============================
 function rate(stars) {
     const feedback = document.getElementById("feedback-msg");
+
     const messages = [
         "System Error: Vibe too low.",
         "Protocol Accepted. Basic level.",
@@ -21,18 +35,15 @@ function rate(stars) {
         "High Frequency Detected!",
         "MAXIMUM VIBE: Bit-Nexus Fully Initialized!"
     ];
-    
+
     feedback.innerHTML = messages[stars - 1];
-    feedback.style.color = "#00f2ff"; // Neon Cyan
+    feedback.style.color = "#00f2ff";
     feedback.style.textShadow = "0 0 10px #00f2ff";
 }
 
-// 3. Scroll Reveal for Cultural Gallery
-// This makes your NCC, Ethnic Day, and Dance sections fade in
-const observerOptions = {
-    threshold: 0.1
-};
-
+// ===============================
+// SCROLL ANIMATION
+// ===============================
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -40,13 +51,40 @@ const observer = new IntersectionObserver((entries) => {
             entry.target.style.transform = "translateY(0)";
         }
     });
-}, observerOptions);
+});
 
-// Start the scripts when the window loads
+// ===============================
+// EMAIL FUNCTION
+// ===============================
+function sendData() {
+    const status = document.getElementById("form-status");
+    status.innerText = "Sending...";
+
+    const params = {
+        name: document.querySelector("input[name='name']").value,
+        email: document.querySelector("input[name='email']").value,
+        message: document.querySelector("textarea[name='message']").value
+    };
+
+    console.log("Trying to send email...");
+
+    emailjs.send("service_zbwf7t6", "template_gbnsntm", params)
+        .then((res) => {
+            console.log("SUCCESS", res);
+            status.innerText = "Message sent successfully!";
+        })
+        .catch((err) => {
+            console.log("ERROR", err);
+            status.innerText = "Failed to send message ❌";
+        });
+}
+
+// ===============================
+// ON LOAD
+// ===============================
 window.onload = () => {
     typeWriter();
-    
-    // Apply reveal effect to all gallery boxes
+
     document.querySelectorAll('.img-box').forEach(box => {
         box.style.opacity = "0";
         box.style.transform = "translateY(20px)";
